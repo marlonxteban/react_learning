@@ -16,7 +16,7 @@ const Home = () => {
         posts.map(post => (
             <div className="card shadow p-3 mb-5 bg-white rounded" key={post.id}>
                 <div className="card-body">
-                    <Link to={`/${[post.id]}`}><h5 className="card-title">{post.title}</h5></Link>
+                    <Link to={`/posts/${[post.id]}`}><h5 className="card-title">{post.title}</h5></Link>
                     <p className="card-text">{post.body}</p>
                 </div>
             </div>
